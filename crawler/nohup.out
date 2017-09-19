@@ -1,0 +1,626 @@
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 129-812-123
+172.10.0.1 - - [12/Dec/2016 12:22:09] "GET / HTTP/1.1" 404 -
+/usr/local/lib/python3.5/dist-packages/werkzeug/filesystem.py:63: BrokenFilesystemWarning: Detected a misconfigured UNIX filesystem: Will use UTF-8 as filesystem encoding instead of 'ascii'
+  BrokenFilesystemWarning)
+172.10.0.1 - - [12/Dec/2016 12:22:19] "GET /r05725049/k8k3k6k2k6 HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 2000, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1991, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1567, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 32, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 32, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 477, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 587, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/sdm/python/crawler/Eboard.py", line 12, in get
+    the_json = get_ceiba(acc, pwd)
+  File "/home/sdm/python/crawler/execute.py", line 47, in get_ceiba
+    return course.get_ceiba(acc, pas)
+  File "/home/sdm/python/crawler/course.py", line 21, in get_ceiba
+    return ceiba_crawler(acc, pas)
+  File "/home/sdm/python/crawler/crawlers/ceiba_crawler.py", line 6, in ceiba_crawler
+    list_of_courses = get_ceiba_courses(url, usr, pas)
+  File "/home/sdm/python/crawler/crawlers/crawler_tools/crawler_helper.py", line 101, in get_ceiba_courses
+    driver = webdriver.Chrome(driver_path)
+  File "/usr/local/lib/python3.5/dist-packages/selenium/webdriver/chrome/webdriver.py", line 62, in __init__
+    self.service.start()
+  File "/usr/local/lib/python3.5/dist-packages/selenium/webdriver/common/service.py", line 81, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+172.10.0.1 - - [12/Dec/2016 12:22:19] "GET /r05725049/k8k3k6k2k6?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:22:19] "GET /r05725049/k8k3k6k2k6?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:22:19] "GET /r05725049/k8k3k6k2k6?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:22:20] "GET /r05725049/k8k3k6k2k6?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:22:20] "GET /r05725049/k8k3k6k2k6?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:22:20] "GET /r05725049/k8k3k6k2k6?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:23:24] "GET /r05725049/k8k3k6k2k6 HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 2000, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1991, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1567, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 32, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 32, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 477, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 587, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/sdm/python/crawler/Eboard.py", line 12, in get
+    the_json = get_ceiba(acc, pwd)
+  File "/home/sdm/python/crawler/execute.py", line 47, in get_ceiba
+    return course.get_ceiba(acc, pas)
+  File "/home/sdm/python/crawler/course.py", line 21, in get_ceiba
+    return ceiba_crawler(acc, pas)
+  File "/home/sdm/python/crawler/crawlers/ceiba_crawler.py", line 6, in ceiba_crawler
+    list_of_courses = get_ceiba_courses(url, usr, pas)
+  File "/home/sdm/python/crawler/crawlers/crawler_tools/crawler_helper.py", line 101, in get_ceiba_courses
+    driver = webdriver.Chrome(driver_path)
+  File "/usr/local/lib/python3.5/dist-packages/selenium/webdriver/chrome/webdriver.py", line 62, in __init__
+    self.service.start()
+  File "/usr/local/lib/python3.5/dist-packages/selenium/webdriver/common/service.py", line 81, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+172.10.0.1 - - [12/Dec/2016 12:23:29] "GET /r05725049/%E5%AF%86%E7%A2%BC HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 2000, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1991, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1567, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 32, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 32, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 477, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 587, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/sdm/python/crawler/Eboard.py", line 12, in get
+    the_json = get_ceiba(acc, pwd)
+  File "/home/sdm/python/crawler/execute.py", line 47, in get_ceiba
+    return course.get_ceiba(acc, pas)
+  File "/home/sdm/python/crawler/course.py", line 21, in get_ceiba
+    return ceiba_crawler(acc, pas)
+  File "/home/sdm/python/crawler/crawlers/ceiba_crawler.py", line 6, in ceiba_crawler
+    list_of_courses = get_ceiba_courses(url, usr, pas)
+  File "/home/sdm/python/crawler/crawlers/crawler_tools/crawler_helper.py", line 101, in get_ceiba_courses
+    driver = webdriver.Chrome(driver_path)
+  File "/usr/local/lib/python3.5/dist-packages/selenium/webdriver/chrome/webdriver.py", line 62, in __init__
+    self.service.start()
+  File "/usr/local/lib/python3.5/dist-packages/selenium/webdriver/common/service.py", line 81, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+172.10.0.1 - - [12/Dec/2016 12:23:42] "GET /r05725049/%E5%AF%86%E7%A2%BC HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 2000, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1991, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1567, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 32, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 32, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 477, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 587, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/sdm/python/crawler/Eboard.py", line 12, in get
+    the_json = get_ceiba(acc, pwd)
+  File "/home/sdm/python/crawler/execute.py", line 47, in get_ceiba
+    return course.get_ceiba(acc, pas)
+  File "/home/sdm/python/crawler/course.py", line 21, in get_ceiba
+    return ceiba_crawler(acc, pas)
+  File "/home/sdm/python/crawler/crawlers/ceiba_crawler.py", line 6, in ceiba_crawler
+    list_of_courses = get_ceiba_courses(url, usr, pas)
+  File "/home/sdm/python/crawler/crawlers/crawler_tools/crawler_helper.py", line 101, in get_ceiba_courses
+    driver = webdriver.Chrome(driver_path)
+  File "/usr/local/lib/python3.5/dist-packages/selenium/webdriver/chrome/webdriver.py", line 62, in __init__
+    self.service.start()
+  File "/usr/local/lib/python3.5/dist-packages/selenium/webdriver/common/service.py", line 81, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+172.10.0.1 - - [12/Dec/2016 12:24:07] "GET /r05725049/%E5%AF%86%E7%A2%BC HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 2000, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1991, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1567, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 32, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 32, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 477, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 587, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/sdm/python/crawler/Eboard.py", line 12, in get
+    the_json = get_ceiba(acc, pwd)
+  File "/home/sdm/python/crawler/execute.py", line 47, in get_ceiba
+    return course.get_ceiba(acc, pas)
+  File "/home/sdm/python/crawler/course.py", line 21, in get_ceiba
+    return ceiba_crawler(acc, pas)
+  File "/home/sdm/python/crawler/crawlers/ceiba_crawler.py", line 6, in ceiba_crawler
+    list_of_courses = get_ceiba_courses(url, usr, pas)
+  File "/home/sdm/python/crawler/crawlers/crawler_tools/crawler_helper.py", line 101, in get_ceiba_courses
+    driver = webdriver.Chrome(driver_path)
+  File "/usr/local/lib/python3.5/dist-packages/selenium/webdriver/chrome/webdriver.py", line 62, in __init__
+    self.service.start()
+  File "/usr/local/lib/python3.5/dist-packages/selenium/webdriver/common/service.py", line 81, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+172.10.0.1 - - [12/Dec/2016 12:24:25] "GET /r05725049/%E5%AF%86%E7%A2%BC HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 2000, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1991, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1567, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 32, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 32, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 477, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 587, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/sdm/python/crawler/Eboard.py", line 12, in get
+    the_json = get_ceiba(acc, pwd)
+  File "/home/sdm/python/crawler/execute.py", line 47, in get_ceiba
+    return course.get_ceiba(acc, pas)
+  File "/home/sdm/python/crawler/course.py", line 21, in get_ceiba
+    return ceiba_crawler(acc, pas)
+  File "/home/sdm/python/crawler/crawlers/ceiba_crawler.py", line 6, in ceiba_crawler
+    list_of_courses = get_ceiba_courses(url, usr, pas)
+  File "/home/sdm/python/crawler/crawlers/crawler_tools/crawler_helper.py", line 101, in get_ceiba_courses
+    driver = webdriver.Chrome(driver_path)
+  File "/usr/local/lib/python3.5/dist-packages/selenium/webdriver/chrome/webdriver.py", line 62, in __init__
+    self.service.start()
+  File "/usr/local/lib/python3.5/dist-packages/selenium/webdriver/common/service.py", line 81, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+172.10.0.1 - - [12/Dec/2016 12:24:25] "GET /r05725049/%E5%AF%86%E7%A2%BC?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:24:25] "GET /r05725049/%E5%AF%86%E7%A2%BC?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:24:25] "GET /r05725049/%E5%AF%86%E7%A2%BC?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:24:26] "GET /r05725049/%E5%AF%86%E7%A2%BC?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:24:27] "GET /r05725049/%E5%AF%86%E7%A2%BC?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:24:27] "GET /r05725049/%E5%AF%86%E7%A2%BC?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:24:56] "GET /r05725049/sa HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 2000, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1991, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1567, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 32, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 32, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 477, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 587, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/sdm/python/crawler/Eboard.py", line 12, in get
+    the_json = get_ceiba(acc, pwd)
+  File "/home/sdm/python/crawler/execute.py", line 47, in get_ceiba
+    return course.get_ceiba(acc, pas)
+  File "/home/sdm/python/crawler/course.py", line 21, in get_ceiba
+    return ceiba_crawler(acc, pas)
+  File "/home/sdm/python/crawler/crawlers/ceiba_crawler.py", line 6, in ceiba_crawler
+    list_of_courses = get_ceiba_courses(url, usr, pas)
+  File "/home/sdm/python/crawler/crawlers/crawler_tools/crawler_helper.py", line 101, in get_ceiba_courses
+    driver = webdriver.Chrome(driver_path)
+  File "/usr/local/lib/python3.5/dist-packages/selenium/webdriver/chrome/webdriver.py", line 62, in __init__
+    self.service.start()
+  File "/usr/local/lib/python3.5/dist-packages/selenium/webdriver/common/service.py", line 81, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+172.10.0.1 - - [12/Dec/2016 12:24:56] "GET /r05725049/sa?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:24:56] "GET /r05725049/sa?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:24:56] "GET /r05725049/sa?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:24:56] "GET /r05725049/sa?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:24:56] "GET /r05725049/sa?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:24:57] "GET /r05725049/sa?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/home/sdm/python/crawler/crawlers/crawler_tools/crawler_helper.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 129-812-123
+/usr/local/lib/python3.5/dist-packages/werkzeug/filesystem.py:63: BrokenFilesystemWarning: Detected a misconfigured UNIX filesystem: Will use UTF-8 as filesystem encoding instead of 'ascii'
+  BrokenFilesystemWarning)
+172.10.0.1 - - [12/Dec/2016 12:26:37] "GET /r05725049/k8k3k6k2k6 HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 2000, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1991, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1567, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 32, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 32, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 477, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 587, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/sdm/python/crawler/Eboard.py", line 12, in get
+    the_json = get_ceiba(acc, pwd)
+  File "/home/sdm/python/crawler/execute.py", line 47, in get_ceiba
+    return course.get_ceiba(acc, pas)
+  File "/home/sdm/python/crawler/course.py", line 21, in get_ceiba
+    return ceiba_crawler(acc, pas)
+  File "/home/sdm/python/crawler/crawlers/ceiba_crawler.py", line 6, in ceiba_crawler
+    list_of_courses = get_ceiba_courses(url, usr, pas)
+  File "/home/sdm/python/crawler/crawlers/crawler_tools/crawler_helper.py", line 102, in get_ceiba_courses
+    driver = webdriver.Chrome(driver_path)
+  File "/usr/local/lib/python3.5/dist-packages/selenium/webdriver/chrome/webdriver.py", line 62, in __init__
+    self.service.start()
+  File "/usr/local/lib/python3.5/dist-packages/selenium/webdriver/common/service.py", line 81, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+172.10.0.1 - - [12/Dec/2016 12:26:37] "GET /r05725049/k8k3k6k2k6?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:26:37] "GET /r05725049/k8k3k6k2k6?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:26:37] "GET /r05725049/k8k3k6k2k6?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:26:38] "GET /r05725049/k8k3k6k2k6?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:26:38] "GET /r05725049/k8k3k6k2k6?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:27:00] "GET /r05725049/k8k3k6k2k6 HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 2000, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1991, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1567, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 32, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 32, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 477, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 587, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/sdm/python/crawler/Eboard.py", line 12, in get
+    the_json = get_ceiba(acc, pwd)
+  File "/home/sdm/python/crawler/execute.py", line 47, in get_ceiba
+    return course.get_ceiba(acc, pas)
+  File "/home/sdm/python/crawler/course.py", line 21, in get_ceiba
+    return ceiba_crawler(acc, pas)
+  File "/home/sdm/python/crawler/crawlers/ceiba_crawler.py", line 6, in ceiba_crawler
+    list_of_courses = get_ceiba_courses(url, usr, pas)
+  File "/home/sdm/python/crawler/crawlers/crawler_tools/crawler_helper.py", line 102, in get_ceiba_courses
+    driver = webdriver.Chrome(driver_path)
+  File "/usr/local/lib/python3.5/dist-packages/selenium/webdriver/chrome/webdriver.py", line 62, in __init__
+    self.service.start()
+  File "/usr/local/lib/python3.5/dist-packages/selenium/webdriver/common/service.py", line 81, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+172.10.0.1 - - [12/Dec/2016 12:27:01] "GET /r05725049/k8k3k6k2k6?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:27:01] "GET /r05725049/k8k3k6k2k6?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:27:01] "GET /r05725049/k8k3k6k2k6?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:27:01] "GET /r05725049/k8k3k6k2k6?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:27:01] "GET /r05725049/k8k3k6k2k6?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+ * Detected change in '/home/sdm/python/crawler/crawlers/crawler_tools/crawler_helper.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 129-812-123
+/usr/local/lib/python3.5/dist-packages/werkzeug/filesystem.py:63: BrokenFilesystemWarning: Detected a misconfigured UNIX filesystem: Will use UTF-8 as filesystem encoding instead of 'ascii'
+  BrokenFilesystemWarning)
+172.10.0.1 - - [12/Dec/2016 12:29:09] "GET /r05725049/k8k3k6k2k6 HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 2000, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1991, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1567, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 32, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 32, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 477, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/flask_restful/__init__.py", line 587, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/sdm/python/crawler/Eboard.py", line 12, in get
+    the_json = get_ceiba(acc, pwd)
+  File "/home/sdm/python/crawler/execute.py", line 47, in get_ceiba
+    return course.get_ceiba(acc, pas)
+  File "/home/sdm/python/crawler/course.py", line 21, in get_ceiba
+    return ceiba_crawler(acc, pas)
+  File "/home/sdm/python/crawler/crawlers/ceiba_crawler.py", line 6, in ceiba_crawler
+    list_of_courses = get_ceiba_courses(url, usr, pas)
+  File "/home/sdm/python/crawler/crawlers/crawler_tools/crawler_helper.py", line 103, in get_ceiba_courses
+    driver = webdriver.Chrome()
+  File "/usr/local/lib/python3.5/dist-packages/selenium/webdriver/chrome/webdriver.py", line 69, in __init__
+    desired_capabilities=desired_capabilities)
+  File "/usr/local/lib/python3.5/dist-packages/selenium/webdriver/remote/webdriver.py", line 92, in __init__
+    self.start_session(desired_capabilities, browser_profile)
+  File "/usr/local/lib/python3.5/dist-packages/selenium/webdriver/remote/webdriver.py", line 179, in start_session
+    response = self.execute(Command.NEW_SESSION, capabilities)
+  File "/usr/local/lib/python3.5/dist-packages/selenium/webdriver/remote/webdriver.py", line 236, in execute
+    self.error_handler.check_response(response)
+  File "/usr/local/lib/python3.5/dist-packages/selenium/webdriver/remote/errorhandler.py", line 192, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.27-moby x86_64)
+172.10.0.1 - - [12/Dec/2016 12:29:09] "GET /r05725049/k8k3k6k2k6?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:29:09] "GET /r05725049/k8k3k6k2k6?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:29:09] "GET /r05725049/k8k3k6k2k6?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:29:09] "GET /r05725049/k8k3k6k2k6?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:29:09] "GET /r05725049/k8k3k6k2k6?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+ * Detected change in '/home/sdm/python/crawler/crawlers/crawler_tools/crawler_helper.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 129-812-123
+172.10.0.1 - - [12/Dec/2016 12:34:57] "GET /r05725049/k8k3k6k2k6 HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:38:13] "GET /r05725049/k8k3k6k2k6 HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:38:48] "GET /r05725049/k8k3k6k2k6 HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:40:52] "GET /r05725049/k8k3k6k2k6 HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:40:53] "GET /favicon.ico HTTP/1.1" 404 -
+172.10.0.1 - - [12/Dec/2016 12:42:19] "GET /r05725049/k8k3k6k2k6 HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:43:36] "GET /r05725049/k8k3k6k2k6 HTTP/1.1" 200 -
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 129-812-123
+172.10.0.1 - - [12/Dec/2016 12:47:32] "GET /r05725049/k8k3k6k2k6 HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 12:55:39] "GET /r05725049/k8k3k6k2k6 HTTP/1.1" 200 -
+ * Detected change in '/home/sdm/python/crawler/Eboard.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 129-812-123
+ * Detected change in '/home/sdm/python/crawler/crawlers/crawler_tools/crawler_helper.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 129-812-123
+172.10.0.1 - - [12/Dec/2016 13:13:23] "GET /r05725049/k8k3k6k2k6 HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 13:14:13] "GET /r05725049/k8k3k6k2k6 HTTP/1.1" 200 -
+172.10.0.1 - - [12/Dec/2016 13:14:34] "GET /r05725049/k8k3k6k2k6 HTTP/1.1" 200 -
+172.10.0.1 - - [13/Dec/2016 02:42:18] "GET /r05725049/%E5%AF%86%E7%A2%BC HTTP/1.1" 200 -
+172.10.0.1 - - [13/Dec/2016 02:42:18] "GET /favicon.ico HTTP/1.1" 404 -
+172.10.0.1 - - [13/Dec/2016 02:42:29] "GET /r05725049/iio HTTP/1.1" 200 -
+172.10.0.1 - - [13/Dec/2016 02:43:54] "GET /r05725049/iioio HTTP/1.1" 200 -
+172.10.0.1 - - [13/Dec/2016 07:22:55] "GET /r05725018/sdfdf HTTP/1.1" 200 -
+172.10.0.1 - - [13/Dec/2016 07:23:20] "GET /r05725018/sdfdf HTTP/1.1" 200 -
+172.10.0.1 - - [13/Dec/2016 07:24:05] "GET /r05725018/three080449AAA HTTP/1.1" 200 -
+172.10.0.1 - - [13/Dec/2016 07:25:09] "GET /r05725018/t HTTP/1.1" 200 -
+172.10.0.1 - - [13/Dec/2016 07:40:35] "GET /r05725018/three080449AAA HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 07:42:01] "GET /r05725018/three080449AAA HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 07:53:16] "GET /r05725018/t HTTP/1.1" 200 -
+172.10.0.1 - - [13/Dec/2016 09:14:01] "GET /WDQ/WQD HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 09:15:26] "GET /dqw/qdw HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 09:15:58] "GET /dqw/qdw HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 09:16:17] "GET /qdw/qwd HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 09:17:10] "GET /qwd/qdw HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 09:20:58] "GET /dqw/dwq HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 09:22:09] "GET /qdw/qw HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 09:22:14] "GET // HTTP/1.0" 404 -
+172.10.0.1 - - [13/Dec/2016 09:22:51] "GET /dqw/qdw HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 09:23:32] "GET /r05725039/2jifu6fu HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 09:24:07] "GET /r05725039/wqwqdj HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 09:26:36] "GET /r05725039/2jifu6fu HTTP/1.1" 200 -
+172.10.0.1 - - [13/Dec/2016 09:26:36] "GET /favicon.ico HTTP/1.1" 404 -
+172.10.0.1 - - [13/Dec/2016 09:29:28] "GET /r05725039/2jifu6fu HTTP/1.1" 200 -
+172.10.0.1 - - [13/Dec/2016 09:30:16] "GET /r05725039/2jifu6fu HTTP/1.1" 200 -
+172.10.0.1 - - [13/Dec/2016 09:38:04] "GET /dw/qwd HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 09:38:37] "GET // HTTP/1.0" 404 -
+172.10.0.1 - - [13/Dec/2016 09:39:39] "GET /fe/efw HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 09:39:46] "GET // HTTP/1.0" 404 -
+172.10.0.1 - - [13/Dec/2016 09:40:16] "GET /r05725039/2jifu6fu HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 11:12:20] "GET // HTTP/1.0" 404 -
+172.10.0.1 - - [13/Dec/2016 11:12:58] "GET /r05725039/2jifu6fu HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 11:15:09] "GET /r05725039/2jifu6fu HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 11:18:37] "GET /r05725039/2jifu6fu HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 11:19:12] "GET /r05725039/2jifu6fu HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 11:22:07] "GET /r05725039/2jifu6fu HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 11:23:40] "GET /r05725039/2jifu6fu HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 11:24:32] "GET /r05725039/2jifu6fu HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 11:30:11] "GET /r05725039/2jifu6fu HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 11:31:14] "GET /r05725039/2jifu6fu HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 11:33:19] "GET /r05725039/2jifu6fu HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 12:19:54] "GET /r05725038/r05725038 HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 12:20:14] "GET /r05725038/r05725038 HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 12:20:36] "GET /r05725038/r05725038 HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 12:21:00] "GET /r05725038/r05725038 HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 12:21:34] "GET /r05725038/r05725038 HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 12:22:18] "GET /r05725038/aa22363756 HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 12:29:15] "GET /r05725038/aa22363756 HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 12:34:56] "GET /r05725038/aa22363756 HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 12:36:13] "GET /r05725038/aa22363756 HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 12:39:14] "GET /r05725038/aa22363756 HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 12:39:59] "GET /qw/qw HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 12:41:41] "GET /wq/dwq HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 12:41:58] "GET /r05725038/aa22363756 HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 13:26:50] "GET /cew/efw HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 13:26:56] "GET /fwe/fwe HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 13:27:01] "GET /wdq/dwq HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 13:27:16] "GET /r05725039/2jifu6fu HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 13:27:22] "GET /qwd/dqw HTTP/1.0" 200 -
+172.10.0.1 - - [13/Dec/2016 13:27:28] "GET /asc/asc HTTP/1.0" 200 -
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 129-812-123
+172.10.0.1 - - [13/Dec/2016 13:38:50] "GET /ef/efw HTTP/1.1" 200 -
+172.10.0.1 - - [13/Dec/2016 13:38:50] "GET /favicon.ico HTTP/1.1" 404 -
+172.10.0.1 - - [13/Dec/2016 13:39:15] "GET / HTTP/1.1" 404 -
+172.10.0.1 - - [13/Dec/2016 13:39:29] "GET /r05725049/k8k3k6k2k6 HTTP/1.1" 200 -
